@@ -21,7 +21,7 @@ public partial class Sobre : ContentPage
 
     private async void TapGestureRecognizer_Tapped_2(object sender, TappedEventArgs e)
     {
-        var url = "https://github.com/glauzinha-exe/MauiAppHotel";
+        var url = "https://github.com/Gabbie-p/MauiAppHotel";
         await Launcher.OpenAsync(url);
     }
 
