@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor= "#A8CBA0">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10">
+
+            <Label 
+                Text="Sobre mim:"
+                FontFamily="SilkscreenBold"
+                FontSize="25"
+                TextColor="#4A6E24"
+                HorizontalOptions="Center"/>
+
+            <Frame Padding="10" BackgroundColor="#F6C8B5" BorderColor="#4A6E24">
+
+                <VerticalStackLayout Padding="10">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
+                        <Frame HasShadow="False"
+                               CornerRadius="60"
+                               Padding="5"
+                               BackgroundColor="#F6C8B5">
+                            <Image Source="perfil.png"
+                                   HeightRequest="109"
+                                   WidthRequest="109"
+                                   Aspect="AspectFill" />
+                        </Frame>
+
+                        
+
+
+                    </StackLayout>
+
+                    <Label Text="Meu nome é Gabriela, gosto de programação e estou sempre procurando aprimorar meus conhecimentos na área."
+                           Padding="0,10,0,0"
+                           TextColor="black"
+                           FontFamily="Teko"
+                           FontSize="20"/>
+                    
+                    <BoxView HeightRequest="2" BackgroundColor="#4A6E24" Margin="0,5"/>
+
+                    <Label Text="Estudando essas tecnologias:"
+                           Padding="0,10,0,0"
+                           TextColor="black"
+                           FontFamily="Silkscreen"/>
+
+                    <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+                        <HorizontalStackLayout>
+                            <Image Source="java.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="Java" FontSize="11" TextColor="Black" FontFamily="Silkscreen"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="javascript.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="JavaScript" FontSize="11" TextColor="Black" FontFamily="Silkscreen"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="html.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="HTML" FontSize="11" TextColor="Black" FontFamily="Silkscreen"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="css.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="CSS" FontSize="11" TextColor="Black" FontFamily="Silkscreen"/>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="php.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="PHP" FontSize="11" TextColor="Black" FontFamily="Silkscreen"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="mysql.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="MySQL" FontSize="11" TextColor="Black" FontFamily="Silkscreen"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="csharp.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="C Sharp" FontSize="11" TextColor="Black" FontFamily="Silkscreen"/>
+                        </HorizontalStackLayout>
+                        
+                    </StackLayout>
+
+                    <BoxView HeightRequest="2" BackgroundColor="#4A6E24" Margin="0,5"/>
+
+                    <Label Text="Links:"
+                           Padding="0,20,0,0"
+                           TextColor="Black"
+                           FontFamily="Silkscreen"/>
+
+                    <StackLayout Orientation="Horizontal" Padding="0,0,0,0">
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="github.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="Github"
+                                   FontSize="11"
+                                   Padding="5"
+                                   TextColor="black"
+                                   FontFamily="Silkscreen">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout Padding="5">
+                            <Image Source="linkedin.png" HeightRequest="30" WidthRequest="30" />
+                            <Label Text="LinkedIn"
+                                   FontSize="11"
+                                   Padding="5"
+                                   TextColor="black"
+                                   FontFamily="Silkscreen">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label 
+                Text="Projeto:"
+                FontFamily="SilkscreenBold"
+                FontSize="25"
+                Padding="0,10,0,0"
+                TextColor="#4A6E24"
+                HorizontalOptions="Center"/>
+
+            <Frame Padding="10" BackgroundColor="#F6C8B5" BorderColor="#4A6E24">
+                <VerticalStackLayout Padding="10">
+                    <Label >
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span TextColor="Black" FontSize="19" FontFamily="Teko" Text="Aplicativo de hotel criado como atividade para o curso de DS da ETEC."/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    
+
+                    <HorizontalStackLayout Padding="10">
+                        <Image Source="perfil.png" HeightRequest="15" WidthRequest="15" />
+                        <Label Text="MauiAppHotel"
+                               Padding="5,0,0,0"
+                               FontSize="13"
+                               TextColor="black"
+                               FontFamily="Silkscreen">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Button Text="Voltar"
+                    FontFamily="Silkscreen" 
+                    FontAttributes="Bold" 
+                    FontSize="14" 
+                    TextColor="#4A6E24"
+                    BackgroundColor="#F6C8B5" 
+                    BorderColor="#B2FBAE"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0" 
+                    Pressed="Button_Pressed"
+                    CornerRadius="15"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
